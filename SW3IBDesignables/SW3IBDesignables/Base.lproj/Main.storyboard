@@ -21,6 +21,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Hf-3s-HQb">
+                                <rect key="frame" x="49.5" y="167" width="277" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPj-SM-oOU">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="30"/>
+                                        <state key="normal" title="Green Image"/>
+                                        <connections>
+                                            <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVf-IL-TRy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwM-4k-1hh">
+                                        <rect key="frame" x="108" y="0.0" width="76" height="30"/>
+                                        <state key="normal" title="Blue Image"/>
+                                        <connections>
+                                            <action selector="blueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fda-H6-hSO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-yW-xQW">
+                                        <rect key="frame" x="204" y="0.0" width="73" height="30"/>
+                                        <state key="normal" title="Red Image"/>
+                                        <connections>
+                                            <action selector="redButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PkM-XK-FQw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VN6-ai-SKn" customClass="RoundedBottomImageView" customModule="SW3IBDesignables" customModuleProvider="target">
                                 <rect key="frame" x="67" y="213" width="240" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,7 +55,7 @@
                                     <constraint firstAttribute="height" constant="240" id="qmA-oo-JZ9"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="swiftGreen"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="swiftGreen256"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="roundingValue">
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
@@ -39,9 +65,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VN6-ai-SKn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CSP-9I-8fv"/>
+                            <constraint firstItem="2Hf-3s-HQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CZ5-mv-d5x"/>
                             <constraint firstItem="VN6-ai-SKn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQg-Zv-ZVi"/>
+                            <constraint firstItem="VN6-ai-SKn" firstAttribute="top" secondItem="2Hf-3s-HQb" secondAttribute="bottom" constant="16" id="mKX-9G-jEz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theCustomView" destination="VN6-ai-SKn" id="BH0-7E-c4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,6 +80,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="swiftGreen" width="300" height="300"/>
+        <image name="swiftGreen256" width="256" height="256"/>
     </resources>
 </document>
