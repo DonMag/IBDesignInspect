@@ -16,4 +16,5 @@ To see the difference when running the app, simply change the Main Interface und
 
 ![My image](http://donmag.com/gh/IBDesignInspect/Interface.png)
 
+Generally, the "Alternate" method would be done first and *then* implemented as a custom subclass... but, for instructional purposes, it's here now.
 
