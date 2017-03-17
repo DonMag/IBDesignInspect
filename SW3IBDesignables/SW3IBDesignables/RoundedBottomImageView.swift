@@ -61,7 +61,7 @@ class RoundedBottomImageView: UIView {
 		let maskForPath = CAShapeLayer()
 		maskForPath.path = myBezier.cgPath
 		layer.mask = maskForPath
-		
+	
 	}
 
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LXFView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-Gi-ZYl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                    <color key="backgroundColor" red="1" green="0.92849634179999996" blue="0.70116557349999997" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the XIB View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1N-qF-mvq">
+                    <rect key="frame" x="112.5" y="323" width="150.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.47450980392156861" green="0.8666666666666667" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4U9-Gi-ZYl" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="8g1-gE-6VW"/>
+                <constraint firstItem="4U9-Gi-ZYl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DFX-81-8AW"/>
+                <constraint firstItem="i1N-qF-mvq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ip6-1n-tkz"/>
+                <constraint firstItem="i1N-qF-mvq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eMj-vX-y3M"/>
+                <constraint firstItem="4U9-Gi-ZYl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fm7-fh-ZGU"/>
+                <constraint firstAttribute="trailing" secondItem="4U9-Gi-ZYl" secondAttribute="trailing" id="hpl-7f-RxN"/>
+            </constraints>
+            <connections>
+                <outlet property="theLabel" destination="i1N-qF-mvq" id="OSf-Mu-yrb"/>
+            </connections>
+        </view>
+    </objects>
+</document>

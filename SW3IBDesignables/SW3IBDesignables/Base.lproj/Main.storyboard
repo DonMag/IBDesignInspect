@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HbV-aZ-fvg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -61,13 +61,56 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLW-kQ-5eQ" customClass="RoundShadImgView" customModule="SW3IBDesignables" customModuleProvider="target">
+                                <rect key="frame" x="67" y="506" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ePo-Au-kk4"/>
+                                    <constraint firstAttribute="width" constant="240" id="feG-Ql-2Hp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="swiftBlue256"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETO-9l-LD3">
+                                <rect key="frame" x="148" y="20" width="78" height="18"/>
+                                <color key="backgroundColor" red="0.97480174324055646" green="0.69127549525197129" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiN-RU-1Sn" customClass="Other" customModule="SW3IBDesignables" customModuleProvider="target">
+                                <rect key="frame" x="148" y="86" width="78" height="18"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBy-ON-218" customClass="SecurityButton" customModule="SW3IBDesignables" customModuleProvider="target">
+                                <rect key="frame" x="148.5" y="50" width="78" height="18"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qiN-RU-1Sn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Jm-iD-oqe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oLW-kQ-5eQ" secondAttribute="bottom" constant="33" id="5AZ-Ug-7JU"/>
+                            <constraint firstItem="qiN-RU-1Sn" firstAttribute="top" secondItem="aBy-ON-218" secondAttribute="bottom" constant="18" id="6tw-fB-tBz"/>
                             <constraint firstItem="VN6-ai-SKn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CSP-9I-8fv"/>
                             <constraint firstItem="2Hf-3s-HQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CZ5-mv-d5x"/>
+                            <constraint firstItem="ETO-9l-LD3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oaz-1K-ZTO"/>
                             <constraint firstItem="VN6-ai-SKn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQg-Zv-ZVi"/>
+                            <constraint firstItem="ETO-9l-LD3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cSm-fZ-ezK"/>
+                            <constraint firstItem="aBy-ON-218" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hcR-s3-3vX"/>
+                            <constraint firstItem="aBy-ON-218" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="kcu-IU-cL6"/>
                             <constraint firstItem="VN6-ai-SKn" firstAttribute="top" secondItem="2Hf-3s-HQb" secondAttribute="bottom" constant="16" id="mKX-9G-jEz"/>
+                            <constraint firstItem="oLW-kQ-5eQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBp-2H-9L0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -78,8 +121,58 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FsD-pe-n0B">
+            <objects>
+                <viewController id="HbV-aZ-fvg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KMg-EV-HsZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Klm-dG-NXr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YZp-de-m39">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7U-Zu-bod" customClass="BPlus" customModule="SW3IBDesignables" customModuleProvider="target">
+                                <rect key="frame" x="97" y="243.5" width="180" height="180"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="d2m-wb-is8"/>
+                                    <constraint firstAttribute="width" constant="180" id="fEY-T0-CAQ"/>
+                                </constraints>
+                                <state key="normal" title="This is the title">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P7U-Zu-bod" firstAttribute="centerY" secondItem="YZp-de-m39" secondAttribute="centerY" id="0Yl-Jd-Khq"/>
+                            <constraint firstItem="P7U-Zu-bod" firstAttribute="centerX" secondItem="YZp-de-m39" secondAttribute="centerX" id="feg-vn-vnN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ics-dd-esz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5999999999999" y="147.97601199400302"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="swiftBlue256" width="256" height="256"/>
         <image name="swiftGreen256" width="256" height="256"/>
     </resources>
 </document>
