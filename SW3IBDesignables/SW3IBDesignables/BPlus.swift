@@ -113,8 +113,8 @@ class BPlus: UIButton {
 		
 		let cRadius: CGFloat = min(self.bounds.size.height, self.bounds.size.width) / 2.0
 		self.layer.cornerRadius = cRadius
-		self.subImageView.layer.cornerRadius = cRadius
-		self.subImageView.layer.masksToBounds = true
+		subImageView.layer.cornerRadius = cRadius
+		subImageView.layer.masksToBounds = true
 
 		subImageView.backgroundColor = self.backgroundColor == nil ? UIColor.clear : self.backgroundColor
 		subImageView.strokeColor = self.titleColor(for: .normal) == nil ? UIColor.black : self.titleColor(for: .normal)!
