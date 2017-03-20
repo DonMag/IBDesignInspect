@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LFXView">
             <connections>
+                <outlet property="constraintViewWidth" destination="chR-vQ-TdI" id="W5e-mg-dvo"/>
                 <outlet property="theLabel" destination="37e-hs-ID5" id="Ckw-jN-Uud"/>
             </connections>
         </placeholder>
@@ -22,7 +23,21 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahf-oW-eBL">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4k-Mb-9RR">
+                            <rect key="frame" x="8" y="8" width="20" height="20"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="chR-vQ-TdI"/>
+                                <constraint firstAttribute="height" constant="20" id="i2F-5D-edS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" red="1" green="0.92849634179999996" blue="0.70116557349999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="C4k-Mb-9RR" firstAttribute="top" secondItem="Ahf-oW-eBL" secondAttribute="top" constant="8" id="YnW-vR-Nmf"/>
+                        <constraint firstItem="C4k-Mb-9RR" firstAttribute="leading" secondItem="Ahf-oW-eBL" secondAttribute="leading" constant="8" id="z3v-Pg-4HL"/>
+                    </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the XIB View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37e-hs-ID5">
                     <rect key="frame" x="112.5" y="323" width="150.5" height="21"/>
@@ -40,6 +55,7 @@
                 <constraint firstItem="37e-hs-ID5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WBJ-8z-dWD"/>
                 <constraint firstAttribute="trailing" secondItem="Ahf-oW-eBL" secondAttribute="trailing" id="hbq-Qk-obH"/>
             </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
 </document>

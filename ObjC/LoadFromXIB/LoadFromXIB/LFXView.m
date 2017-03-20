@@ -8,7 +8,11 @@
 
 #import "LFXView.h"
 
-BOOL bInit = NO;
+@interface LFXView ()
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintViewWidth;
+
+@end
 
 @implementation LFXView
 
@@ -47,8 +51,6 @@ BOOL bInit = NO;
 	
 	if (!self.subviews.count) {
 		
-		bInit = YES;
-		
 		UIView *view = [self loadFromXIB];
 		
 		view.frame = self.bounds;
@@ -63,6 +65,11 @@ BOOL bInit = NO;
 				self.theLabel = (UILabel *)v;
 				break;
 			}
+		}
+		
+		// just an example of changing a constant when the custom view is loaded
+		if (CGRectGetHeight([UIScreen mainScreen].bounds) == 667) {
+			_constraintViewWidth.constant = 60;
 		}
 		
 	}
