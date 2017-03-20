@@ -10,8 +10,6 @@
 
 @interface LFXView ()
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintViewWidth;
-
 @end
 
 @implementation LFXView
@@ -65,11 +63,6 @@
 				self.theLabel = (UILabel *)v;
 				break;
 			}
-		}
-		
-		// just an example of changing a constant when the custom view is loaded
-		if (CGRectGetHeight([UIScreen mainScreen].bounds) == 667) {
-			_constraintViewWidth.constant = 60;
 		}
 		
 	}

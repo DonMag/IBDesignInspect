@@ -12,8 +12,9 @@ import UIKit
 
 class LFXView: UIView {
 
+	@IBOutlet var theContentView: UIView!
+	
 	@IBOutlet weak var theLabel: UILabel!
-//	@IBOutlet weak var view : UIView!
 	
 	@IBInspectable var theText: String = "This is the XIB View" {
 		didSet {
@@ -21,35 +22,56 @@ class LFXView: UIView {
 		}
 	}
 	
+	convenience init(with someText: String) {
+		self.init(frame: CGRect.zero)
+		theText = someText
+		theLabel.text = someText
+	}
+	
+	convenience init(with someText: String, and color: UIColor) {
+		self.init(frame: CGRect.zero)
+		theText = someText
+		theLabel.text = someText
+		theLabel.textColor = color
+	}
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-		xibSetup()
+		commonInit()
 	}
 	
-	public required init?(coder aDecoder: NSCoder) {
+	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-		xibSetup()
+		commonInit()
 	}
 	
-	private func xibSetup() {
-		let view = loadViewFromXib()
-		view.frame = bounds
-		view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-		view.layer.cornerRadius = 24.0
-		view.layer.masksToBounds = true
-		addSubview(view)
-		sendSubview(toBack: view)
-	}
-	
-	private func loadViewFromXib() -> UIView {
-		let nib = UINib(nibName: String(describing: type(of: self)), bundle: Bundle(for: type(of: self)))
-		if let cView = nib.instantiate(withOwner: self, options: nil).first as? UIView {
-			return cView
+	private func commonInit() {
+		
+		if self.subviews.count == 0 {
+			
+			let nib = UINib(nibName: String(describing: type(of: self)), bundle: Bundle(for: type(of: self)))
+			if let cView = nib.instantiate(withOwner: self, options: nil).first as? UIView {
+				theContentView = cView
+			} else {
+				// shouldn't happen
+				theContentView = UIView()
+			}
+			
+			addSubview(theContentView)
+			
+			theContentView.translatesAutoresizingMaskIntoConstraints = false
+			
+			theContentView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+			theContentView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+			theContentView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+			theContentView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+			
+			// just to show some customization
+			theContentView.layer.cornerRadius = 24.0
+			theContentView.layer.masksToBounds = true
+			
 		}
-		else {
-			print("Unable to load custom view!")
-			return UIView()
-		}
+		
 	}
 
 }

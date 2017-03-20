@@ -21,34 +21,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noh-3e-gPX">
-                                <rect key="frame" x="101" y="36" width="172" height="30"/>
-                                <state key="normal" title="Tap to Load the XIB View"/>
-                                <connections>
-                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DgU-zO-7V3"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="A2x-d2-XNF">
+                                <rect key="frame" x="24.5" y="36" width="326" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noh-3e-gPX">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="34"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="Load, then configure"/>
+                                        <connections>
+                                            <action selector="loadThenConfigTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2zg-0L-A9N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAj-n9-jUQ">
+                                        <rect key="frame" x="174" y="0.0" width="152" height="34"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="Load with configure"/>
+                                        <connections>
+                                            <action selector="loadWithConfigTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yaj-Zh-gmi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or just use in IB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqw-IQ-a5o">
-                                <rect key="frame" x="127" y="323" width="120" height="21"/>
+                                <rect key="frame" x="127" y="323.5" width="120" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-a6-Y5X" customClass="LFXView" customModule="SW3LoadFromXIB" customModuleProvider="target">
                                 <rect key="frame" x="67" y="368" width="240" height="150"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Unr-zQ-gz0"/>
                                     <constraint firstAttribute="width" constant="240" id="g6l-RG-AXh"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.9886082182" green="1" blue="0.97480885490000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.71802884615384621" green="0.72499999999999998" blue="0.71105769230769222" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="noh-3e-gPX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Gf-5h-BZ1"/>
                             <constraint firstItem="7Jj-a6-Y5X" firstAttribute="top" secondItem="Dqw-IQ-a5o" secondAttribute="bottom" constant="24" id="2dI-tX-Cq2"/>
                             <constraint firstItem="7Jj-a6-Y5X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5R3-kd-Okl"/>
-                            <constraint firstItem="noh-3e-gPX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="BPD-jx-4A7"/>
+                            <constraint firstItem="A2x-d2-XNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HSC-0O-ElH"/>
+                            <constraint firstItem="A2x-d2-XNF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="oos-sL-1u5"/>
                             <constraint firstItem="Dqw-IQ-a5o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tie-ms-VAG"/>
                             <constraint firstItem="Dqw-IQ-a5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zoD-jN-UTN"/>
                         </constraints>

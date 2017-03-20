@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LFXView" customModule="SW3LoadFromXIB" customModuleProvider="target">
             <connections>
+                <outlet property="theContentView" destination="RIl-Tm-qHR" id="nZb-TE-lRd"/>
                 <outlet property="theLabel" destination="45g-ml-t4h" id="1xp-Gg-c4l"/>
             </connections>
         </placeholder>

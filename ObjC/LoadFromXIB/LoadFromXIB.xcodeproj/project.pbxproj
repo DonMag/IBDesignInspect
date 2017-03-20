@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C2A3DC71E800FC60066676D /* LFXCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A3DC51E800FC60066676D /* LFXCViewController.m */; };
+		7C2A3DC81E800FC60066676D /* LFXCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C2A3DC61E800FC60066676D /* LFXCViewController.xib */; };
 		7CD88D871E7C70EF00BEA8E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD88D861E7C70EF00BEA8E7 /* main.m */; };
 		7CD88D8A1E7C70EF00BEA8E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD88D891E7C70EF00BEA8E7 /* AppDelegate.m */; };
 		7CD88D8D1E7C70EF00BEA8E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD88D8C1E7C70EF00BEA8E7 /* ViewController.m */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C2A3DC41E800FC60066676D /* LFXCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFXCViewController.h; sourceTree = "<group>"; };
+		7C2A3DC51E800FC60066676D /* LFXCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFXCViewController.m; sourceTree = "<group>"; };
+		7C2A3DC61E800FC60066676D /* LFXCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFXCViewController.xib; sourceTree = "<group>"; };
 		7CD88D821E7C70EF00BEA8E7 /* LoadFromXIB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadFromXIB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD88D861E7C70EF00BEA8E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CD88D881E7C70EF00BEA8E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +80,9 @@
 				7CD88DA11E7C857400BEA8E7 /* LFXView.h */,
 				7CD88DA21E7C857400BEA8E7 /* LFXView.m */,
 				7CD88DA41E7C858300BEA8E7 /* LFXView.xib */,
+				7C2A3DC41E800FC60066676D /* LFXCViewController.h */,
+				7C2A3DC51E800FC60066676D /* LFXCViewController.m */,
+				7C2A3DC61E800FC60066676D /* LFXCViewController.xib */,
 			);
 			path = LoadFromXIB;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				7CD88DA51E7C858300BEA8E7 /* LFXView.xib in Resources */,
 				7CD88D951E7C70EF00BEA8E7 /* LaunchScreen.storyboard in Resources */,
 				7CD88D921E7C70EF00BEA8E7 /* Assets.xcassets in Resources */,
+				7C2A3DC81E800FC60066676D /* LFXCViewController.xib in Resources */,
 				7CD88D901E7C70EF00BEA8E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +170,7 @@
 			files = (
 				7CD88D8D1E7C70EF00BEA8E7 /* ViewController.m in Sources */,
 				7CD88D8A1E7C70EF00BEA8E7 /* AppDelegate.m in Sources */,
+				7C2A3DC71E800FC60066676D /* LFXCViewController.m in Sources */,
 				7CD88DA31E7C857400BEA8E7 /* LFXView.m in Sources */,
 				7CD88D871E7C70EF00BEA8E7 /* main.m in Sources */,
 			);
@@ -319,6 +329,7 @@
 				7CD88D9B1E7C70EF00BEA8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
