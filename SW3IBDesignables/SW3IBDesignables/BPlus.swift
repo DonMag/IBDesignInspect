@@ -48,7 +48,7 @@ class BPlusInnerView: UIView {
 class BPlus: UIButton {
 
 	var subImageView: BPlusInnerView!
-	
+
 	@IBInspectable var borderWidth: CGFloat = 0.0 {
 		didSet {
 			self.layer.borderWidth = borderWidth
@@ -85,13 +85,6 @@ class BPlus: UIButton {
 		}
 	}
 	
-//	override func setTitleColor(_ color: UIColor?, for state: UIControlState) {
-//		super.setTitleColor(color, for: state)
-//		if self.subImageView != nil {
-//			self.subImageView.strokeColor = color!
-//		}
-//	}
-	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		addSubviews()
@@ -108,9 +101,11 @@ class BPlus: UIButton {
 	}
 	
 	func addSubviews() {
-		subImageView = BPlusInnerView()
-		subImageView.isUserInteractionEnabled = false
-		addSubview(subImageView)
+		if subImageView == nil {
+			subImageView = BPlusInnerView()
+			subImageView.isUserInteractionEnabled = false
+			addSubview(subImageView)
+		}
 	}
 	
 	override func layoutSubviews() {

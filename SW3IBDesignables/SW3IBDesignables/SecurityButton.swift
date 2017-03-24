@@ -54,7 +54,6 @@ class SecurityButton: UIButton {
 		
 		super.contentEdgeInsets = UIEdgeInsets(top: t, left: l, bottom: b, right: r)
 	}
-
 	
 	@IBInspectable
 	var color: UIColor = UIColor.black {
