@@ -14,6 +14,8 @@
 		7C05E9D31E64821700C13F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C05E9D11E64821700C13F9E /* LaunchScreen.storyboard */; };
 		7C05E9DB1E64823A00C13F9E /* RoundedBottomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E9DA1E64823A00C13F9E /* RoundedBottomImageView.swift */; };
 		7C1BBCE81E7C0C8A00E8BCC1 /* RoundShadImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1BBCE71E7C0C8A00E8BCC1 /* RoundShadImgView.swift */; };
+		7C4AD9041E8AF46B00537B1A /* MyCustomSegControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AD9031E8AF46B00537B1A /* MyCustomSegControl.swift */; };
+		7C4AD9061E8AF70600537B1A /* MyCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AD9051E8AF70600537B1A /* MyCustomLabel.swift */; };
 		7CA8DC9D1E66FF8200FC88D3 /* WithoutCustomClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8DC9C1E66FF8200FC88D3 /* WithoutCustomClassViewController.swift */; };
 		7CA8DC9F1E67016600FC88D3 /* Alternate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA8DC9E1E67016600FC88D3 /* Alternate.storyboard */; };
 		7CD88D721E7C36D100BEA8E7 /* SecurityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD88D711E7C36D100BEA8E7 /* SecurityButton.swift */; };
@@ -32,6 +34,8 @@
 		7C05E9D41E64821700C13F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C05E9DA1E64823A00C13F9E /* RoundedBottomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBottomImageView.swift; sourceTree = "<group>"; };
 		7C1BBCE71E7C0C8A00E8BCC1 /* RoundShadImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundShadImgView.swift; sourceTree = "<group>"; };
+		7C4AD9031E8AF46B00537B1A /* MyCustomSegControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSegControl.swift; sourceTree = "<group>"; };
+		7C4AD9051E8AF70600537B1A /* MyCustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomLabel.swift; sourceTree = "<group>"; };
 		7CA8DC9C1E66FF8200FC88D3 /* WithoutCustomClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithoutCustomClassViewController.swift; sourceTree = "<group>"; };
 		7CA8DC9E1E67016600FC88D3 /* Alternate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alternate.storyboard; sourceTree = "<group>"; };
 		7CD88D711E7C36D100BEA8E7 /* SecurityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityButton.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				7CD88D731E7C3FC900BEA8E7 /* Other.swift */,
 				7CD88D751E7C554300BEA8E7 /* BPlus.swift */,
 				7CD88D771E7C589300BEA8E7 /* BPlusRound.swift */,
+				7C4AD9031E8AF46B00537B1A /* MyCustomSegControl.swift */,
+				7C4AD9051E8AF70600537B1A /* MyCustomLabel.swift */,
 			);
 			path = SW3IBDesignables;
 			sourceTree = "<group>";
@@ -162,9 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C05E9CB1E64821700C13F9E /* ViewController.swift in Sources */,
+				7C4AD9061E8AF70600537B1A /* MyCustomLabel.swift in Sources */,
 				7C1BBCE81E7C0C8A00E8BCC1 /* RoundShadImgView.swift in Sources */,
 				7CA8DC9D1E66FF8200FC88D3 /* WithoutCustomClassViewController.swift in Sources */,
 				7CD88D781E7C589300BEA8E7 /* BPlusRound.swift in Sources */,
+				7C4AD9041E8AF46B00537B1A /* MyCustomSegControl.swift in Sources */,
 				7CD88D721E7C36D100BEA8E7 /* SecurityButton.swift in Sources */,
 				7CD88D761E7C554300BEA8E7 /* BPlus.swift in Sources */,
 				7C05E9C91E64821700C13F9E /* AppDelegate.swift in Sources */,

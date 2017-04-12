@@ -62,4 +62,13 @@ class SecurityButton: UIButton {
 		}
 	}
 	
+	private var _iList: String = ""
+	
+	@IBInspectable
+	var strList: String = "" {
+		didSet {
+			_iList = strList
+		}
+	}
+	
 }
